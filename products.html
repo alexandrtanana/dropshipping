@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - DropExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">DropExpress</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html" class="active">Товары</a></li>
+                    <li><a href="suppliers.html">Поставщики</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-login">Вход</button>
+                <button class="btn-register">Регистрация</button>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Каталог товаров</h1>
+                <p>Тысячи продуктов от проверенных поставщиков</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="filters">
+                    <h3>Фильтры</h3>
+                    <div class="filter-group">
+                        <label for="category">Категория:</label>
+                        <select id="category">
+                            <option value="">Все категории</option>
+                            <option value="electronics">Электроника</option>
+                            <option value="clothing">Одежда</option>
+                            <option value="home">Дом и сад</option>
+                            <option value="beauty">Красота и здоровье</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price">Цена:</label>
+                        <input type="range" id="price" min="0" max="10000" step="100">
+                        <div class="price-range">
+                            <span>0 руб.</span>
+                            <span>10 000 руб.</span>
+                        </div>
+                    </div>
+                    <button class="apply-filters">Применить фильтры</button>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Умные часы Premium</h3>
+                            <p class="product-description">Современные умные часы с отслеживанием здоровья</p>
+                            <div class="product-price">4 999 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Беспроводные наушники</h3>
+                            <p class="product-description">Качественный звук с шумоподавлением</p>
+                            <div class="product-price">3 499 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Фитнес-трекер</h3>
+                            <p class="product-description">Отслеживание активности и сна</p>
+                            <div class="product-price">2 199 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Портативная колонка</h3>
+                            <p class="product-description">Мощный звук в компактном корпусе</p>
+                            <div class="product-price">5 799 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Электронная книга</h3>
+                            <p class="product-description">Комфортное чтение без вреда для глаз</p>
+                            <div class="product-price">8 499 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmNWY1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdCBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Товар">
+                        </div>
+                        <div class="product-info">
+                            <h3>Смартфон</h3>
+                            <p class="product-description">Мощный процессор и отличная камера</p>
+                            <div class="product-price">24 999 руб.</div>
+                            <button class="add-to-cart">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DropExpress</h3>
+                    <p>Лучшая платформа для дропшиппинга с 2023 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="suppliers.html">Поставщики</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Следите за нами</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DropExpress. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Дополнительный скрипт для страницы товаров
+        document.addEventListener('DOMContentLoaded', function() {
+            // Фильтрация товаров
+            const applyFiltersBtn = document.querySelector('.apply-filters');
+            if (applyFiltersBtn) {
+                applyFiltersBtn.addEventListener('click', function() {
+                    alert('Фильтры применены! В реальном приложении здесь будет фильтрация товаров.');
+                });
+            }
+
+            // Добавление в корзину
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('h3').textContent;
+                    alert(`Товар "${productName}" добавлен в корзину!`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

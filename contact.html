@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - DropExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">DropExpress</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="suppliers.html">Поставщики</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-login">Вход</button>
+                <button class="btn-register">Регистрация</button>
+            </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <p>Мы всегда готовы помочь и ответить на ваши вопросы</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Телефон</h3>
+                        <div class="contact-info">
+                            <p>+7 (800) 555-35-35</p>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                        <p class="contact-hours">Ежедневно с 9:00 до 21:00</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email</h3>
+                        <div class="contact-info">
+                            <p>info@dropexpress.ru</p>
+                            <p>support@dropexpress.ru</p>
+                        </div>
+                        <p class="contact-hours">Ответ в течение 2 часов</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h3>Мессенджеры</h3>
+                        <div class="contact-info">
+                            <p>Telegram: @dropexpress</p>
+                            <p>WhatsApp: +7 (900) 123-45-67</p>
+                        </div>
+                        <p class="contact-hours">Круглосуточная поддержка</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🏢</div>
+                        <h3>Офис</h3>
+                        <div class="contact-info">
+                            <p>г. Москва, ул. Тверская, д. 25</p>
+                            <p>БЦ "Центральный", 5 этаж</p>
+                        </div>
+                        <p class="contact-hours">Пн-Пт с 10:00 до 19:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        <p>Мы всегда рады помочь вам с любыми вопросами. Выберите удобный способ связи:</p>
+                        
+                        <div class="social-media">
+                            <h3>Мы в соцсетях:</h3>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link vk">
+                                    <span class="social-icon">📘</span>
+                                    <span>VKontakte</span>
+                                </a>
+                                <a href="#" class="social-link tg">
+                                    <span class="social-icon">📱</span>
+                                    <span>Telegram</span>
+                                </a>
+                                <a href="#" class="social-link yt">
+                                    <span class="social-icon">📺</span>
+                                    <span>YouTube</span>
+                                </a>
+                                <a href="#" class="social-link inst">
+                                    <span class="social-icon">📷</span>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="faq-preview">
+                            <h3>Частые вопросы:</h3>
+                            <div class="faq-items">
+                                <div class="faq-item">
+                                    <h4>Как начать работать с платформой?</h4>
+                                    <p>Процесс регистрации занимает 5 минут. После верификации вы получаете доступ ко всем функциям.</p>
+                                </div>
+                                <div class="faq-item">
+                                    <h4>Какие комиссии у платформы?</h4>
+                                    <p>Мы работаем по прозрачной системе комиссий от 5% до 15% в зависимости от объема продаж.</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-secondary">Все вопросы</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Отправьте сообщение</h2>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Имя *</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема *</label>
+                                <select id="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="support">Техническая поддержка</option>
+                                    <option value="partnership">Партнерство</option>
+                                    <option value="payment">Вопросы по оплате</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    <span>Я согласен с обработкой персональных данных</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2>Мы на карте</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <h3>📍 Наш офис в Москве</h3>
+                                <p>г. Москва, ул. Тверская, д. 25</p>
+                                <p>БЦ "Центральный", 5 этаж</p>
+                                <p>🚇 Станции метро: Тверская, Пушкинская, Чеховская</p>
+                                <button class="btn-secondary">Построить маршрут</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DropExpress</h3>
+                    <p>Лучшая платформа для дропшиппинга с 2023 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="suppliers.html">Поставщики</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Следите за нами</h4>
+                    <div class="social-links">
+                        <a href="#">VK</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DropExpress. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Дополнительный скрипт для страницы контактов
+        document.addEventListener('DOMContentLoaded', function() {
+            // Обработка формы
+            const contactForm = document.querySelector('.contact-form form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Сообщение отправлено! Мы свяжемся с вами в ближайшее время.');
+                    this.reset();
+                });
+            }
+
+            // Социальные сети
+            const socialLinks = document.querySelectorAll('.social-link');
+            socialLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const platform = this.querySelector('span:last-child').textContent;
+                    alert(`Переход на ${platform}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
